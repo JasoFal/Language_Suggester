@@ -10,60 +10,72 @@
 <body>
   <h1>Language Suggester</h1>
   <p>Fill the form out bellow to figure out what programming language you should learn.</p>
+  <div class="main-box">
+    <form id="form-inputs">
+      <div class="breakfast-box">
+        <p>Favorite Breakfast</p>
+        <input type="radio" name="breakfast" id="egg" value="1" checked>
+        <label for="egg">Eggs and toast</label>
+        <input type="radio" name="breakfast" id="frenchToast" value="2">
+        <label for="frenchToast">French toast</label>
+        <input type="radio" name="breakfast" id="pancakes" value="3">
+        <label for="pancakes">Pancakes</label>
+        <input type="radio" name="breakfast" id="waffles" value="4">
+        <label for="waffles">Waffles</label>
+      </div>
 
-  <form id="form-inputs">
-    <p>Favorite Breakfast</p>
-    <input type="radio" name="breakfast" id="egg" value="1" checked>
-    <label for="egg">Eggs and toast</label>
-    <input type="radio" name="breakfast" id="frenchToast" value="2">
-    <label for="frenchToast">French toast</label>
-    <input type="radio" name="breakfast" id="pancakes" value="3">
-    <label for="pancakes">Pancakes</label>
-    <input type="radio" name="breakfast" id="waffles" value="4">
-    <label for="waffles">Waffles</label>
+      <div class="movie-box">
+        <p>Favorite Movie</p>
+        <input type="radio" name="movie" id="toyStory" value="1" checked>
+        <label for="toyStory">Toy Story</label>
+        <input type="radio" name="movie" id="theShining" value="2">
+        <label for="theShining">The Shining</label>
+        <input type="radio" name="movie" id="tombstone" value="3">
+        <label for="tombstone">Tombstone</label>
+        <input type="radio" name="movie" id="playtime" value="4">
+        <label for="playtime">Playtime</label>
+      </div>
 
-    <p>Favorite Movie</p>
-    <input type="radio" name="movie" id="toyStory" value="1">
-    <label for="toyStory">Toy Story</label>
-    <input type="radio" name="movie" id="theShining" value="2">
-    <label for="theShining">The Shining</label>
-    <input type="radio" name="movie" id="tombstone" value="3">
-    <label for="tombstone">Tombstone</label>
-    <input type="radio" name="movie" id="playtime" value="4">
-    <label for="playtime">Playtime</label>
+      <div class="lang-box">
+        <p>Favorite Language</p>
+        <input type="radio" name="lang" id="english" value="1" checked>
+        <label for="english">English</label>
+        <input type="radio" name="lang" id="mandarin" value="2">
+        <label for="mandarin">Mandarin</label>
+        <input type="radio" name="lang" id="french" value="3">
+        <label for="french">French</label>
+        <input type="radio" name="lang" id="german" value="4">
+        <label for="german">German</label>
+      </div>
 
-    <p>Favorite Language</p>
-    <input type="radio" name="lang" id="english" value="1">
-    <label for="english">English</label>
-    <input type="radio" name="lang" id="mandarin" value="2">
-    <label for="mandarin">Mandarin</label>
-    <input type="radio" name="lang" id="french" value="3">
-    <label for="french">French</label>
-    <input type="radio" name="lang" id="german" value="4">
-    <label for="german">German</label>
+      <div class="sport-box">
+        <p>Favorite Sport</p>
+        <input type="radio" name="sport" id="football" value="1" checked>
+        <label for="football">Football</label>
+        <input type="radio" name="sport" id="soccer" value="2">
+        <label for="soccer">Soccer</label>
+        <input type="radio" name="sport" id="baseball" value="3">
+        <label for="sport">Baseball</label>
+        <input type="radio" name="sport" id="bowling" value="4">
+        <label for="bowling">Bowling</label>
+      </div>
 
-    <p>Favorite Sport</p>
-    <input type="radio" name="sport" id="football" value="1">
-    <label for="football">Football</label>
-    <input type="radio" name="sport" id="soccer" value="2">
-    <label for="soccer">Soccer</label>
-    <input type="radio" name="sport" id="baseball" value="3">
-    <label for="sport">Baseball</label>
-    <input type="radio" name="sport" id="bowling" value="4">
-    <label for="bowling">Bowling</label>
+      <div class="state-box">
+        <p>Favorite State</p>
+        <input type="radio" name="state" id="liquid" value="1" checked>
+        <label for="liquid">Liquid</label>
+        <input type="radio" name="state" id="solid" value="2">
+        <label for="solid">Solid</label>
+        <input type="radio" name="state" id="gas" value="3">
+        <label for="gas">Gas</label>
+        <input type="radio" name="state" id="plasma" value="4">
+        <label for="plasma">Plasma</label>
+      </div>
 
-    <p>Favorite State</p>
-    <input type="radio" name="state" id="liquid" value="1">
-    <label for="liquid">Liquid</label>
-    <input type="radio" name="state" id="solid" value="2">
-    <label for="solid">Solid</label>
-    <input type="radio" name="state" id="gas" value="3">
-    <label for="gas">Gas</label>
-    <input type="radio" name="state" id="plasma" value="4">
-    <label for="plasma">Plasma</label>
-
-    <button type="submit">Submit</button>
-  </form>
-  <p>You should study <span id="output"> </span>!</p>
+      <button type="submit">Submit</button>
+    </form>
+    <p>You should study <span id="output"></span>!</p>
+  </div>
 </body>
+
 </html>

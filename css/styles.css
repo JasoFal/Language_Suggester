@@ -1,0 +1,30 @@
+.main-box {
+  padding: 10px;
+  margin: 10px;
+  border: 5px #E11ECB;
+}
+
+.breakfast-box {
+  padding: 5px;
+  margin: 5px;
+}
+
+.movie-box {
+  padding: 5px;
+  margin: 5px;
+}
+
+.lang-box {
+  padding: 5px;
+  margin: 5px;
+}
+
+.sport-box {
+  padding: 5px;
+  margin: 5px;
+}
+
+.state-box {
+  padding: 5px;
+  margin: 5px;
+}
