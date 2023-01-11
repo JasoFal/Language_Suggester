@@ -1,28 +1,28 @@
 function languageSuggester(event) {
   event.preventDefault();
-
-  let breakfastInput = document.getElementById("input[id#`breakfast`]:checked");
-  let movieInput = document.querySelector("input[name=`movie`]:checked");
-  let langInput = document.querySelector("input[name=`lang`]:checked");
-  let sportInput = document.querySelector("input[name=`sport`]:checked");
-  let stateInput = document.querySelector("input[name=`state`]:checked");
+  let breakfastInput = parseInt(document.querySelector("input[name='breakfast']:checked").value);
+  let movieInput = parseInt(document.querySelector("input[name='movie']:checked").value);
+  let langInput = parseInt(document.querySelector("input[name='lang']:checked").value);
+  let sportInput = parseInt(document.querySelector("input[name='sport']:checked").value);
+  let stateInput = parseInt(document.querySelector("input[name='state']:checked").value);
 
   let totalValue = breakfastInput + movieInput + langInput + sportInput + stateInput;
+  
   let result;
   if (totalValue <= 7) {
-    result = `Ruby`;
+    result = 'Ruby';
   } else if (totalValue <= 14) {
-    result = `Python`;
+    result = 'Python';
   } else if (totalValue <= 20) {
-    result = `C#`;
+    result = 'C#';
   } else {
-    result = `ERROR`;
+    result = 'ERROR';
   }
 
-  document.getElementById(`output`).innerText = result;
+  document.getElementById('output').innerText = result;
 }
 
-window.addEventListener(`load`, function() {
-  const form = this.document.getElementById(`form-inputs`);
-  form.addEventListener(`submit`, languageSuggester);
+window.addEventListener('load', function() {
+  const form = this.document.getElementById('form-inputs');
+  form.addEventListener('submit', languageSuggester);
 });
