@@ -1,30 +1,55 @@
+.container {
+  display: grid;
+  grid-template-columns: [first] 25% [line2] 60px [line3] auto [col4-start] 60px [five] 25% [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+
+.item-1 {
+  grid-column-start: 3;
+  grid-column-end: span col4-start;
+  grid-row-start: row1-start;
+  grid-row-end: row1-end;
+}
+
+.item-2 {
+  grid-column-start: 3;
+  grid-column-end: span col4-start;
+  grid-row-start: 2;
+  grid-row-end: span last-line;
+}
+
 .main-box {
   padding: 10px;
   margin: 10px;
-  border: 5px #E11ECB;
+  border: 5px dotted #28D7A4;
 }
 
 .breakfast-box {
   padding: 5px;
   margin: 5px;
+  border: 2px solid #4C28D7
 }
 
 .movie-box {
   padding: 5px;
   margin: 5px;
+  border: 2px solid #4C28D7
 }
 
 .lang-box {
   padding: 5px;
   margin: 5px;
+  border: 2px solid #4C28D7
 }
 
 .sport-box {
   padding: 5px;
   margin: 5px;
+  border: 2px solid #4C28D7
 }
 
 .state-box {
   padding: 5px;
   margin: 5px;
+  border: 2px solid #4C28D7
 }
