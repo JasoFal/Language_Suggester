@@ -25,7 +25,7 @@ _This website shows what coding language you should study after filling out seve
 * _Use command `start index.html` if in Git Bash_
 * _In file explorer click on `index.html`._
 -----
-
+_Alternatively go to [Language Suggester](https://jasofal.github.io/Language_Suggester/)_
 
 ## Known Bugs
 
