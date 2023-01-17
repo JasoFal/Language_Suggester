@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: [first] 25% [line2] 60px [line3] auto [col4-start] 60px [five] 25% [end];
-  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+  grid-template-rows: [row1-start] 18% [row1-end] 100px [third-line] auto [last-line];
 }
 
 .item-1 {
@@ -52,4 +52,13 @@
   padding: 5px;
   margin: 5px;
   border: 2px solid #4C28D7
+}
+
+.result {
+  font-size: 40px;
+  color: #D7285B;
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
+  border: 4px solid #B2D728;
+  box-shadow: 12px 12px 2px 1px rgba(178, 215, 40, .5);
 }
